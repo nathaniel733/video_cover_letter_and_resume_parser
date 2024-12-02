@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    background-color: #4caf50; /* Primary color */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #4caf50; /* Accent color */
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+}
+
+/* Paragraphs and Lists */
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+ul li {
+    padding: 0.5rem;
+    background: #fff;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+a:hover {
+    color: #388e3c;
+}
+
+/* Layout */
+body > h1 + * {
+    margin: 2rem auto;
+    max-width: 800px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body > h1 + * {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, ul li {
+        font-size: 0.9rem;
+    }
+}
